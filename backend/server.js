@@ -7,10 +7,8 @@ import userRoute from './routes/userRoute';
 import productRoute from './routes/productRoute';
 import videosRoute from './routes/videosRoute';
 import projectRoute from './routes/projectRoute';
-import dotenv from 'dotenv';
-import cors from 'cors';
 import articulosRoute from './routes/articulosRoute';
-import orderRoute from './routes/orderRoute'
+import orderRoute from './routes/orderRoute';
 
 
 
@@ -28,6 +26,8 @@ const app = express();
 
 
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.use('/api/users', userRoute);
 app.use('/', productRoute);
 app.use('/', videosRoute);
@@ -43,7 +43,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(`${__dirname}/../frontend/public/index.html`));
 });
 
+const port = process.env.PORT ||'5000';
 
-app.listen(5000, () => {
+app.listen(port, () => {
   console.log('Server started at http://localhost:5000');
 });

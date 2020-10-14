@@ -455,14 +455,15 @@ h2 {
       justify-content: center;
       justify-items: center;
       width: 6rem;
-      margin-left: 5rem;
-      margin-right: 2rem;
+      margin-left: 4rem;
+      margin-right: 3rem;
  
     }
     .logo-nav-1{
       display: flex;
       justify-content: center;
       margin-left:0;
+
     }
 
     .logo-nav-2{

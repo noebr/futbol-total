@@ -28,7 +28,9 @@ export const removeFromCart = (product) => (dispatch, getState) => {
 };
 export const saveFacturacion = (data) => (dispatch) => {
   dispatch({ type: CART_SAVE_FACTURACION, payload: data });
+  localStorage.setItem('HomeCompra', JSON.stringify(data));
 }
  export const savePayment = (data) => (dispatch) => {
   dispatch({ type: CART_SAVE_PAYMENT, payload: data });
+ 
 }

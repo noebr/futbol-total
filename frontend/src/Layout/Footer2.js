@@ -11,6 +11,8 @@ class Footer2 extends Component {
 <br/>Apoya TIPCSA
 </div>
 
+            <img src="/imagenes/sello.png" className="sello" alt="apóyanos" />
+ 
 </div>
   
 

@@ -1,5 +1,7 @@
 import jwt from 'jsonwebtoken';
-import config from './config';
+
+
+
 const getToken = (user) => {
   return jwt.sign(
     {
@@ -8,7 +10,7 @@ const getToken = (user) => {
       email: user.email,
       isAdmin: user.isAdmin,
     },
-    config.JWT_SECRET,
+    process.env.JWT_SECRET || 'somethingsecret',
     {
       expiresIn: '48h',
     }
@@ -16,20 +18,23 @@ const getToken = (user) => {
 };
 
 const isAuth = (req, res, next) => {
-  const token = req.headers.authorization;
-
-  if (token) {
-    const onlyToken = token.slice(7, token.length);
-    jwt.verify(onlyToken, config.JWT_SECRET, (err, decode) => {
-      if (err) {
-        return res.status(401).send({ message: 'Invalid Token' });
+  const authorization = req.headers.authorization;
+  if (authorization) {
+    const token = authorization.slice(7, authorization.length);
+    jwt.verify(
+      token,
+      process.env.JWT_SECRET || 'somethingsecret',
+      (err, decode) => {
+        if (err) {
+          res.status(401).send({ message: 'Invalid Token' });
+        } else {
+          req.user = decode;
+          next();
+        }
       }
-      req.user = decode;
-      next();
-      return;
-    });
+    );
   } else {
-    return res.status(401).send({ message: 'Token is not supplied.' });
+    res.status(401).send({ message: 'No Token' });
   }
 };
 

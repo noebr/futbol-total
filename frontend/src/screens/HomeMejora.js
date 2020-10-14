@@ -1,67 +1,78 @@
-import React, { Component } from 'react';
-import '../Shopping.css';
-import Layout from '../Layout/Layout';
+import React, { Component } from "react";
+import "../Shopping.css";
+import Layout from "../Layout/Layout";
 
-class HomeMejora extends Component{
-    render(){
-        return(
-            <Layout>
-            <div className="contenedor-rendimiento">
-            <h1>MEJORÁ TU RENDIMIENTO</h1>
-            
+class HomeMejora extends Component {
+  render() {
+    return (
+      <Layout>
+        <div className="contenedor-rendimiento">
+          <h1>MEJORÁ TU RENDIMIENTO</h1>
 
-            
-            <div className="imagen-rectangular">
+          <div className="imagen-rectangular">
             <h2 className="centrar">17 REGLAS DEL FÚTBOL</h2>
-            <img src='/imagenes/fotos-4.png'className="imagen-logo" alt="REGLAS-FUTBOL-FIFA" />
-    
-         <br/>
-         <div className="texto-rendimiento centrado">
-            <p>Todos creemos conocer pero, ¿Realmente sabemos las
-                reglas del juego? Si dudas,aquí te contamos más...
-            </p>
+            <img
+              src="/imagenes/fotos-4.png"
+              className="imagen-logo"
+              alt="REGLAS-FUTBOL-FIFA"
+            />
 
-            <button className='button-red-forms'>Continuar</button>
-            </div>
-            </div>
-            <hr/>
+            <br />
+            <div className="texto-rendimiento centrado">
+              <p>
+                Todos creemos conocer pero, ¿Realmente sabemos las reglas del
+                juego? Si dudas,aquí te contamos más...
+              </p>
 
-            
-            
-            <div className="imagen-rectangular">
+              <button className="button-red-forms">Continuar</button>
+            </div>
+          </div>
+          <hr />
+
+          <div className="imagen-rectangular">
             <h2 className="centrar">ALIMENTACIÓN CONSCIENTE</h2>
-            <img src='/imagenes/fotos-4.png'className="imagen-logo" alt="imagen-SANA" />
-        
-         <br/>
+            <img
+              src="/imagenes/fotos-4.png"
+              className="imagen-logo"
+              alt="imagen-SANA"
+            />
 
-    <div className="texto-rendimiento centrado">
-            <p>La nutrición ha sido motivo de interés por parte del cuerpo
-                técnico de equipos profesionales; quienes cada vez más,son conscientes
-                de los beneficios para sus atletas.<br/>Debido que favorece
-                al aporte energético y brinda los nutrientes necesarios para
-                garantizar el rendimiento.
-            </p> 
-
-            <button className='button-red-forms'>Continuar</button>
-    </div>
-    </div>
-            <hr/>
-            
-            <div className="imagen-rectangular">
-            <h2 className="centrar">NUESTRO SHOPPING</h2>
-            <img src='/imagenes/fotos-4.png'className="imagen-logo" alt="shopping" />
+            <br />
 
             <div className="texto-rendimiento centrado">
-                <p>¡Ingresá a nuestro shopping de técnicas del juego y que
-                    tu fútbol sea total!
-                </p>
-                <button className='button-red-forms'>IR AL SHOPPING</button>
+              <p>
+                La nutrición ha sido motivo de interés por parte del cuerpo
+                técnico de equipos profesionales; quienes cada vez más,son
+                conscientes de los beneficios para sus atletas.
+                <br />
+                Debido que favorece al aporte energético y brinda los nutrientes
+                necesarios para garantizar el rendimiento.
+              </p>
+
+              <button className="button-red-forms">Continuar</button>
+            </div>
           </div>
+          <hr />
+
+          <div className="imagen-rectangular">
+            <h2 className="centrar">NUESTRO SHOPPING</h2>
+            <img
+              src="/imagenes/fotos-4.png"
+              className="imagen-logo"
+              alt="shopping"
+            />
+
+            <div className="texto-rendimiento centrado">
+              <p>
+                ¡Ingresá a nuestro shopping de técnicas del juego y que tu
+                fútbol sea total!
+              </p>
+              <button className="button-red-forms">IR AL SHOPPING</button>
+            </div>
           </div>
         </div>
-        </Layout>
-              
-        )
-    }
+      </Layout>
+    );
+  }
 }
 export default HomeMejora;

@@ -8,6 +8,9 @@ const Layout = ({children}) => (
         <Navigation />
         {children}
         <Footer />
+
+            <img src="/imagenes/sello.png" className="sello" alt="apóyanos" />
+
      
     </div>
 

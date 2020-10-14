@@ -8,21 +8,28 @@ import { projectsReducer } from './reducers/projectReducer';
 import { cartReducer } from './reducers/cartReducer';
 import { articulosReducer } from './reducers/articuloReducer';
 import { productListReducer} from './reducers/productReducer';
-import { orderCreateReducer,
-  orderDetailsReducer ,
-  orderPayReducer ,
-  myOrderListReducer ,
-  orderListReducer ,
-  orderDeleteReducer ,} from './reducers/orderReducer';
+import {  orderCreateReducer,
+  orderDetailsReducer,
+  orderPayReducer,} from './reducers/orderReducer';
 
 
 
-const userInfo = Cookie.getJSON('userInfo') || null;
-
-const initialState = {
-  
-  userSignin: { userInfo },
-};
+  const initialState = {
+    userSignin: {
+      userInfo: localStorage.getItem('userInfo')
+        ? JSON.parse(localStorage.getItem('userInfo'))
+        : null,
+    },
+    cart: {
+      cartItems: localStorage.getItem('cartItems')
+        ? JSON.parse(localStorage.getItem('cartItems'))
+        : [],
+        facturacion: localStorage.getItem('facturacion')
+        ? JSON.parse(localStorage.getItem('facturacion'))
+        : {},
+      paymentMethod: 'PayPal',
+    },
+  };
 const reducer = combineReducers({
 
   userSignin: userSigninReducer,
@@ -34,11 +41,8 @@ const reducer = combineReducers({
   articulos:articulosReducer,
   productList: productListReducer,
   orderCreate: orderCreateReducer,
-  orderDetails : orderDetailsReducer ,
-  myOrderList : myOrderListReducer ,
-  orderList : orderListReducer ,
-  orderDelete : orderDeleteReducer ,
-  orderPay : orderPayReducer ,
+  orderDetails: orderDetailsReducer,
+  orderPay: orderPayReducer,
   
 
  
