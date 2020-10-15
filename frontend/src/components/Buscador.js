@@ -7,24 +7,18 @@ class Filter extends Component {
     return !this.props.filteredProducts ? (
       <div>Loading...</div>
     ) : (
-      
-
-
-        <div>
+      <div>
         <li>
-          <form >
-            <input 
-               value={this.props.category}
-               onChange={(e) =>
-                 this.props.filterProducts(this.props.products, e.target.value)
-               }
+          <form>
+            <input
+              value={this.props.category}
+              onChange={(e) =>
+                this.props.filterProducts(this.props.products, e.target.value)
+              }
             />
-           
           </form>
         </li>
-
       </div>
-      
     );
   }
 }

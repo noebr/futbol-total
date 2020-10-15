@@ -21,6 +21,7 @@ class ExistenciaD extends Component {
      <h1 className="centrar">EXISTENCIA DE DONACIONES </h1><br/>
        <h2 className="centrar">Controlá el stock disponibles</h2>      
             <input className="filter-fiscalizacion"
+            placeholder=" Nombre del proyecto"
             value={this.props.category}
             onChange={(e) =>
               this.props.filterProducts(this.props.products, e.target.value)
@@ -29,6 +30,7 @@ class ExistenciaD extends Component {
         </div>
 
             <input className="filter-fiscalizacion"
+            placeholder=" Buscar stock"
             value={this.props.category}
             onChange={(e) =>
               this.props.filterProducts(this.props.products, e.target.value)

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 import Navigation from '../Layout/Navigation';
 import Footer2 from '../Layout/Footer2';
+import DateRange from '../components/DateRange';
 
 
 
@@ -21,6 +22,9 @@ class DetallesdeA extends Component {
      <h1 className="centrar">DETALLES DE TU APORTE </h1><br/>
        <h2 className="centrar">¿Queres ver como ayudaste al proyecto?</h2>      
        <div >
+       <div>
+     <DateRange/>
+      </div>
           {" "}
           <select className="filter-fiscalizacion"
             value={this.props.category}

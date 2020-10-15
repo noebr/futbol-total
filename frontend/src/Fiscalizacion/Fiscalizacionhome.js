@@ -23,7 +23,7 @@ class Fiscalizacionhome extends Component {
         <Link clasName="boton-fiscalizacion"to ="/ingresos-egresos"><img src='/imagenes/FT.T-56.png' className="boton-fiscalizacion" alt="INGRESOS Y EGRESO" />
         </Link><p>INGRESOS Y EGRESOS</p>
 
-        <Link clasName="boton-fiscalizacion"to ="/datalles-aporte"><img src='/imagenes/FT.T-55.png' className="boton-fiscalizacion" alt="DETALLES DE TU APORTE" />
+        <Link clasName="boton-fiscalizacion"to ="/detalles-aporte"><img src='/imagenes/FT.T-55.png' className="boton-fiscalizacion" alt="DETALLES DE TU APORTE" />
         </Link><p>DETALLES DE TU APORTE</p>
 
         <Link clasName="boton-fiscalizacion"to ="/Donaciones-padrinazgo"><img src='/imagenes/FT.T-54.png' className="boton-fiscalizacion" alt="DONACIONES Y PADRINAZGO" />

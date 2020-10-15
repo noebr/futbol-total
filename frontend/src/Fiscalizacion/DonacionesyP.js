@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 import Navigation from '../Layout/Navigation';
 import Footer2 from '../Layout/Footer2';
+import DateRange from '../components/DateRange';
 
 
 
@@ -19,16 +20,29 @@ class DonacionesyP extends Component {
      <div >
           
      <h1 className="centrar">DONACIONES Y PADRINAZGO </h1><br/>
-       <h2 className="centrar">Controlá los aportes y verificá el tuyo</h2>      
-            <input className="filter-fiscalizacion"
+       <h2 className="centrar">Controlá los aportes y verificá el tuyo</h2>  
+       <div>
+     <DateRange/>
+      </div>    
+           
+      {" "}
+          <select className="filter-fiscalizacion"
             value={this.props.category}
             onChange={(e) =>
               this.props.filterProducts(this.props.products, e.target.value)
             }
-         />
+          >
+            <option value="">Medios de pago</option>
+            <option value="inicial">inicial</option>
+            <option value="intermedio">intermedio</option>
+            <option value="avanzado">avanzado</option>
+            <option value="profesional">profesional</option>
+
+          </select>
         </div>
 
             <input className="filter-fiscalizacion"
+            placeholder=" Buscar tu aporte"
             value={this.props.category}
             onChange={(e) =>
               this.props.filterProducts(this.props.products, e.target.value)

@@ -732,7 +732,9 @@ h2 {
 
     
     ::placeholder {
-      color: black;
+      color: grey;
+      font-size: 15px;
+      
     }
   /*FOOTER*/
 
@@ -1310,6 +1312,30 @@ h2 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
+.range{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.input-date{
+
+    justify-content: center;
+    border-radius: 1rem;
+    border: 0.1rem blue solid;
+    font-size: 1.6rem;
+    background-color:whitesmoke;
+    height: 3.5rem;
+    width:15rem;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 4rem;
+
+
+}
+
 
 
 /****CARRITO****/

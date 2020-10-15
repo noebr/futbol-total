@@ -1,11 +1,6 @@
-import { FETCH_PRODUCTS } from "../Types";
-import { FILTER_PRODUCTS_BY_CATEGORY, ORDER_PRODUCTS_BY_PRICE } from "../Types";
+import { FILTER_PRODUCTS_BY_CATEGORY, ORDER_PRODUCTS_BY_PRICE,FETCH_PRODUCTS } from "../Types";
 import { URL_SERVER} from '../constants/userConstants';
-import {
-  PRODUCT_LIST_REQUEST,
-  PRODUCT_LIST_SUCCESS,
-  PRODUCT_LIST_FAIL,
-} from '../constants/productConstants';
+import { PRODUCT_LIST_REQUEST, PRODUCT_LIST_SUCCESS,PRODUCT_LIST_FAIL,} from '../constants/productConstants';
 import axios from 'axios';
 import Axios from 'axios';
 

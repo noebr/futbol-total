@@ -36,6 +36,7 @@ import DonacionesyP from "./Fiscalizacion/DonacionesyP";
 
 import OrderScreen from './screens/OrderScreen';
 import HomeOrder from "./screens/HomeOrder";
+import DetallesdeA from "./Fiscalizacion/DetallesdeA";
 
 
 
@@ -113,6 +114,7 @@ render(){
         <Route path="/entrega-beneficiarios" component={EntregaBeneficiarios}></Route>
         <Route path="/existencia-donaciones" component={ExistenciaD}></Route>
         <Route path="/Donaciones-padrinazgo" component={DonacionesyP}></Route>
+        <Route path="/detalles-aporte" component={DetallesdeA}></Route>
      
         <Route Path="/order/:id" component={OrderScreen}></Route>
         <Route Path="/placeorder" component={HomeOrder}></Route>

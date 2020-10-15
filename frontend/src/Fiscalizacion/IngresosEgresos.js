@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import '../Shopping.css';
-
 import { Link } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 import Navigation from '../Layout/Navigation';
 import Footer2 from '../Layout/Footer2';
+import DateRange from '../components/DateRange'
 
 
 
@@ -16,6 +16,14 @@ class IngresosEgresos extends Component {
     render(){
     return (<div>
      <Navigation/>
+
+       <h1 className="centrar">INGRESOS Y EGRESOS </h1><br/>
+       <h2 className="centrar">Podes ver ingreso y egreso del que fromas parte</h2>
+       <div>
+     <DateRange/>
+      </div>
+      
+
      <div >
           {" "}
           <select className="filter-fiscalizacion"
@@ -32,8 +40,7 @@ class IngresosEgresos extends Component {
 
           </select>
         </div>
-       <h1 className="centrar">INGRESOS Y EGRESOS </h1><br/>
-       <h2 className="centrar">Podes ver ingreso y egreso del que fromas parte</h2>
+
        <div className="container-check">
        <p>¿Qué ingresos quisieras ver?</p>
        <label className="username"><input type="checkbox"/>Donaciones</label><br/>

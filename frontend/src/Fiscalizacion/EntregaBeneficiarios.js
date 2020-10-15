@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 import Navigation from '../Layout/Navigation';
 import Footer2 from '../Layout/Footer2';
+import DateRange from '../components/DateRange';
 
 
 
@@ -20,24 +21,12 @@ class EntregaBeneficiarios extends Component {
           
      <h1 className="centrar">ENTREGA A BENEFICIARIOS </h1><br/>
        <h2 className="centrar">¿Encontraste a quién estas ayudando?</h2>
+       <div>
+     <DateRange/>
+      </div>
 
-            <div >
-          {" "}
-          <select className="filter-fiscalizacion"
-            value={this.props.category}
-            onChange={(e) =>
-              this.props.filterProducts(this.props.products, e.target.value)
-            }
-          >
-            <option value="">Medios de pago</option>
-            <option value="inicial">inicial</option>
-            <option value="intermedio">intermedio</option>
-            <option value="avanzado">avanzado</option>
-            <option value="profesional">profesional</option>
-
-          </select>
-        </div>      
             <input className="filter-fiscalizacion"
+            placeholder=" Nombre de la persona o institución"
             value={this.props.category}
             onChange={(e) =>
               this.props.filterProducts(this.props.products, e.target.value)
