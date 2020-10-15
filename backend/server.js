@@ -13,7 +13,7 @@ import orderRoute from './routes/orderRoute';
 const app = express();
 
 
-mongoose.connect(process.env.MONGODB-URL || 'mongodb://localhost/futbol-total', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/futbol-total', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
