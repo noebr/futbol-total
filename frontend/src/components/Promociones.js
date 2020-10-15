@@ -8,11 +8,13 @@ import { fetchProducts } from "../actions/ProductActions";
 import { addToCart } from "../actions/CartActions";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import HomeCompra from "../screens/HomeCompra";
 import Modal1 from "../components/Modal1";
 import Modal2 from "../components/Modal2";
 
 class Promociones extends Component {
+  componentWillMount() {
+    Modal.setAppElement("body");
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -21,9 +23,7 @@ class Promociones extends Component {
     };
   }
 
-  componentWillMount() {
-    Modal.setAppElement("body");
-  }
+
   componentDidMount() {
     this.props.fetchProducts();
   }

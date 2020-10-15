@@ -25,7 +25,7 @@ function RegisterScreen(props) {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(register(name, email, password));
+    dispatch(register(name, email, password,rePassword));
   }
   return <section className='login'>
                 <Link to="/"><button className="close-modal" >

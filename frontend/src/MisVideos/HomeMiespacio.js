@@ -7,7 +7,7 @@ import { connect } from "react-redux";
 import { fetchArticulos } from "../actions/articulosActions";
 import Modal from "react-modal";
 import Zoom from "react-reveal/Zoom";
-import MiEspacio from '../Layout/MiEspacio';
+
 import Saludo from '../MisVideos/Saludo';
 
 

@@ -1,4 +1,4 @@
-import { FETCH_ESTADISTICAS, FETCH_PROJECTS } from "../Types";
+import { FETCH_PROJECTS } from "../Types";
 import { URL_SERVER } from "../constants/userConstants";
 
 export const fetchProjects = () => async (dispatch) => {
