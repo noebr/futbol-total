@@ -49,6 +49,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "eject": "react-scripts eject",
     "type": "module"
   },
@@ -59,7 +60,6 @@
     "node": "12.4.0",
     "npm": "6.9.0"
   },
-
   "browserslist": {
     "production": [
       ">0.2%",
