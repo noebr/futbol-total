@@ -24,8 +24,13 @@ var corsOptions = {
 };
 router.use((0, _cors.default)(corsOptions));
 router.get("/api/products", async (req, res) => {
-  const products = await _productModels.default.find({});
-  res.send(products);
+  try {
+    const products = await _productModels.default.find({}); // const products = [1,2,3,4];
+
+    res.send(products);
+  } catch (error) {
+    res.send(error);
+  }
 });
 router.post("/api/products", async (req, res) => {
   const newProduct = new _productModels.default(req.body);
