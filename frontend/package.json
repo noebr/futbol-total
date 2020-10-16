@@ -48,16 +48,13 @@
     "styled-components": "5.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "react-start": "react-scripts start",
+    "start": "npm run react-start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "engines": {
-    "node": "12.4.0",
-    "npm": "6.9.0"
   },
   "browserslist": {
     "production": [
@@ -70,12 +67,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.11.5",
-    "nodemon": "^2.0.4"
   }
 }
