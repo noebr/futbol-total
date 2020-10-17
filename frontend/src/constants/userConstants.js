@@ -12,4 +12,4 @@ export const USER_REGISTER_FAIL = 'USER_REGISTER_FAIL';
 
 export const USER_LOGOUT = 'USER_LOGOUT';
 
-export const URL_SERVER = "http://localhost:5000";
+export const URL_SERVER = "https://futbol-total-server.herokuapp.com";

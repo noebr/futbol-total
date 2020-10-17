@@ -1,16 +1,14 @@
-import React, { Component } from 'react';
-import '../Shopping.css';
+import React, { Component } from "react";
+import "../Shopping.css";
 import Fade from "react-reveal/Fade";
-import { Link } from 'react-router-dom';
-import Layout from '../Layout/Layout';
+import { Link } from "react-router-dom";
+import Layout from "../Layout/Layout";
 import { connect } from "react-redux";
 import { fetchProjects } from "../actions/ProjectActions";
 import Modal from "react-modal";
 import Zoom from "react-reveal/Zoom";
-import DatosT from '../components/DatosT';
-
-
-
+import DatosT from "../components/DatosT";
+import DatosT2 from "../components/DatosT2";
 
 class Padrinazgo extends Component {
   constructor(props) {
@@ -61,14 +59,18 @@ class Padrinazgo extends Component {
                         />
                       </Link>
                       <br />
-                      <div>
+                      <div className="datos-t">
                         <div className="datos_tiempo">
-                          <p>CANTIDAD DE DONANTES: {project.c_donantes}</p>
-                          <p>META: GS {project.meta}</p>
-                          <p>MONTO RECAUDADO: GS {project.monto_recaudado}</p>
+                          <p className="datos-m">
+                            CANTIDAD DE DONANTES: {project.c_donantes}
+                          </p>
+                          <p className="datos-m">META: GS{project.meta}</p>
+                          <p className="datos-m">
+                            MONTO RECAUDADO: GS{project.monto_recaudado}
+                          </p>
                         </div>
                         <div>
-                          <DatosT
+                          <DatosT2
                             meta={project.meta}
                             monto_recaudado={project.monto_recaudado}
                           />
@@ -140,17 +142,15 @@ class Padrinazgo extends Component {
             </div>
           )}
         </Fade>
-        
       </Layout>
     );
   }
 }
 export default connect(
   (state) => ({
-    projects: state.projects.items
+    projects: state.projects.items,
   }),
   {
     fetchProjects,
-
   }
 )(Padrinazgo);

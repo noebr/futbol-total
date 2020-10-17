@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-
+import '../App.css'
 import axios from "axios";
-
 import { Doughnut } from "react-chartjs-2";
 
 
@@ -39,53 +38,6 @@ export class DatosT extends Component {
       
     });
 
-    /*  axios.get(`http://localhost:5000/Api/projects`)
-
-      .then(res => {
-
-        console.log(res);
-
-        const ipl = res.data;
-
-        let meta = 0;
-
-        let monto_recaudado = 0;
-
-        ipl.forEach(record => {
-
-          meta=record.meta;
-
-          monto_recaudado=record.monto_recaudado;
-          
-
-        });
-        console.log(meta,monto_recaudado);
-
-        this.setState({
-
-          Data: {
-
-            labels: ["meta","monto_recaudado"],
-
-            datasets: [
-
-              {
-
-                labels: [meta,monto_recaudado],
-
-                data: [meta,monto_recaudado],
-
-                backgroundColor: [ "Blue", "Red" ]
-
-              }
-
-            ]
-
-          }
-
-        });
-
-      })*/
   }
 
   render() {
