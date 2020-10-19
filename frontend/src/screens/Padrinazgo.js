@@ -7,7 +7,6 @@ import { connect } from "react-redux";
 import { fetchProjects } from "../actions/ProjectActions";
 import Modal from "react-modal";
 import Zoom from "react-reveal/Zoom";
-import DatosT from "../components/DatosT";
 import DatosT2 from "../components/DatosT2";
 
 class Padrinazgo extends Component {
@@ -104,7 +103,7 @@ class Padrinazgo extends Component {
                 >
                   <Zoom>
                     <button className="close-modal" onClick={this.closeModal}>
-                      x
+                    &times;
                     </button>
                     <hr />
                     <div>

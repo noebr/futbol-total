@@ -29,7 +29,7 @@ function RegisterScreen(props) {
   }
   return <section className='login'>
                 <Link to="/"><button className="close-modal" >
-                X
+                &times;
               </button></Link>
               <hr/>
     <br/>

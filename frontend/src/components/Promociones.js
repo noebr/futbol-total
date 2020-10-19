@@ -59,7 +59,7 @@ class Promociones extends Component {
         {
           breakpoint: 600,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 2,
             initialSlide: 2,
           },
@@ -137,7 +137,7 @@ class Promociones extends Component {
           >
             <Zoom>
               <button className="close-modal" onClick={this.closeModal}>
-                X
+              &times;
               </button>
               <hr />
               <div className="product-details">
@@ -157,7 +157,7 @@ class Promociones extends Component {
                     <hr />
                     <h1 className="centrar">RESUMEN</h1>
 
-                    <p className=" centrar price">${product.price}</p>
+                    <p className="centrar product-price-details">TOTAL: ${product.price}</p>
 
                     <hr />
                     <div>
@@ -178,10 +178,14 @@ class Promociones extends Component {
                           </p>
                         </li>
                         <li>
-                          <p>Elije el método de pago de tu preferencia</p>
+                          <p>
+                            Elije el método de pago de tu preferencia
+                            </p>
                         </li>
                         <li>
-                          <p>Disfruta del Fútbol Total</p>
+                          <p>
+                            Disfruta del Fútbol Total
+                            </p>
                         </li>
                       </ol>
                       <br />

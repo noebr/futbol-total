@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import '../Shopping.css';
-
-import { Link } from 'react-router-dom';
-import Fade from "react-reveal/Fade";
 import Navigation from '../Layout/Navigation';
 import Footer2 from '../Layout/Footer2';
 import DateRange from '../components/DateRange';

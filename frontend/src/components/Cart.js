@@ -38,9 +38,9 @@ class Cart extends Component {
     return (
       <div>
         {cartItems.length === 0 ? (
-          <div className="cart cart-header">El carrito esta vacío</div>
+          <div className="cart-cart-header">El carrito esta vacío</div>
         ) : (
-          <div className="cart cart-header">
+          <div className="cart-cart-header">
             Tienes {cartItems.length} productos en el carrito{" "}
           </div>
         )}
@@ -110,7 +110,7 @@ class Cart extends Component {
                           className="cart-button"
                           onClick={() => this.props.removeFromCart(item)}
                         >
-                        <img src="./imagenes/basura.png" className="redes-sociales-basura" alt="eliminar"/>
+                        <img src="./imagenes/FT3-18.png" className="redes-sociales-basura" alt="eliminar"/>
                         </button>
                       
                     </div>

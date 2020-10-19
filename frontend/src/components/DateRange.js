@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
-import { filterProducts, sortProducts } from "../actions/ProductActions";
+
 
 class DateRange extends Component {
   render() {

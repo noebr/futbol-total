@@ -34,6 +34,15 @@ app.use('/',projectRoute);
 app.use('/',articulosRoute);
 app.use('/api/orders', orderRoute);
 
+app.use((req, res, next) => {
+  const cacheTime = 60*60*24;
+  res.set({
+    'Cache-Control': `max-age=${cacheTime}`
+  });
+  next();
+});
+
+
 
 
 

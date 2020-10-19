@@ -15,6 +15,7 @@ html {
   font-family: "segoe-ui";
   font-style: italic;
   src: local("segoe-ui.otf");
+  font-display: swap;
   
 }
 
@@ -71,6 +72,7 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
   }
+
   hr{
     border: 0;
     height: 0;
@@ -221,7 +223,7 @@ h2 {
     width:20vw;
     margin: 0 auto;
   }
-  @media (min-width:600px){
+  @media (min-width:500px){
     .button-red{
       font-size: calc(16px + 6 * ((4vw - 320px) / 680));
       background-color:red;
@@ -230,7 +232,7 @@ h2 {
       color: white;
       cursor: pointer;
       font-family: 'Muli', sans-serif;
-      width:15rem;
+      width:20rem;
       height: 4rem;
       margin: 0 auto;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -244,13 +246,42 @@ h2 {
       border-radius:1rem;
       color: white;
       cursor: pointer;
-      width:15rem;
+      width:20rem;
       height: 4.1rem;
       margin: 0 auto;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
+    
+    
+    }
+    .button-red-promociones{
+      font-size: calc(16px + 6 * ((4vw - 320px) / 680));
+      background-color:red;
+      border: red;
+      border-radius: 1rem;
+      color: white;
+      cursor: pointer;
+      font-family: 'Muli', sans-serif;
+      width:20rem;
+      height: 4.1rem;
+      margin: 0 auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+    }
+    .button-transparente-promociones{
+      font-size: calc(16px + 6 * ((4vw - 320px) / 680));
+      background-color: transparent;
+      color: black;
+      border: solid red;
+      border-radius:1rem;
+      color: white;
+      cursor: pointer;
+      width:20rem;
+      height: 4.1rem;
+      margin: 0 auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     
     }
@@ -349,15 +380,15 @@ h2 {
 }
 .redes-sociales-fac{
  margin-top: 1.5rem;
-  height: 50px;
+  height: 40px;
 }
 
-@media (min-width:800px){
+@media (min-width:750px){
   .nav1{
     display: none;
   }
 }
-@media (max-width:800px){
+@media (max-width:751px){
   .nav2{
     display: none;
   }
@@ -400,7 +431,7 @@ h2 {
   .icono{
     display:block;
     border: none;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     background:none;
     color: white;
     justify-content: center;
@@ -419,17 +450,27 @@ h2 {
     height: 3rem;
     margin-right: 3rem;
   }
-  .icon-logo{
-   
-    height:40px;
-  }
-  .boton-atras{
+  .sesion{
+    display: flex;
+    justify-content: center;
     background: none;
     border: none;
+
+  }
+  .icon-logo{
+   
+    height:42px;
+  }
+  .boton-atras{
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    width: 3.5rem;
   }
   .mi-espacio{
-    width: 3rem;
-    height: 3rem;
+    width: 5.5vh;
+ ;
   }
 
 
@@ -440,7 +481,7 @@ h2 {
 
     .icono{
       display:block;
-      font-size:2rem;
+      font-size:1.9rem;
       padding: 2px;
       background:none;
 
@@ -455,7 +496,7 @@ h2 {
       justify-content: center;
       justify-items: center;
       width: 6rem;
-      margin-left: 4rem;
+      margin-left: 6rem;
       margin-right: 3rem;
  
     }
@@ -463,6 +504,8 @@ h2 {
       display: flex;
       justify-content: center;
       margin-left:0;
+      background: none;
+      border: none;
 
     }
 
@@ -471,6 +514,13 @@ h2 {
       justify-content: flex-end;
       align-items: center;
 
+    }
+    .boton-flecha{
+      display: flex;
+      justify-content: center;
+      background: none;
+      border: none;
+      width: 5rem;
     }
  
    
@@ -524,7 +574,7 @@ h2 {
 
     .icono{
       display:block;
-      font-size: 3rem;
+      font-size: 2.8rem;
       padding: 3px;
       background:none;
 
@@ -793,7 +843,7 @@ h2 {
  
 }
 .icon-logo-c{
-  height: 25px;
+  height: 24px;
 }
 
 @media (min-width: 700px){
@@ -806,17 +856,28 @@ h2 {
     margin-left: 0;
    
   }
-  .testimonial {
-    width: 100%;
-    height: 50rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
 
-    
-    }
+
     .img-testimonial{
       width: 100%;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      height: 80px;
     
+    
+    }
+    .testimonial {
+      width: 90%;
+      height: auto;
+      background-color: rgba(65, 62, 62, 0.582);
+      justify-content: center;
+      align-items: center;
+      border-radius: 2rem;
+      margin: 2rem;
+      z-index: 20;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 5rem;
+      
     
     }
 
@@ -842,10 +903,12 @@ h2 {
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  margin: 2rem;
+  margin: auto;
+  margin-top: 4rem;
   z-index: 20;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 1rem 1rem 1rem  1rem;
+  padding: 1rem;
+  
 
 }
 
@@ -986,17 +1049,11 @@ h2 {
  flex-direction: column;
 }
 .product-price-details{
-  font-size: 4rem;
+  font-size: 1.9rem;
   color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-}
-.ol{
-  color:orange;
-  font-weight: 600;
-  font-size: 2rem;
-  text-align: center;
-  
-}
 
 
 /* Product Details */
@@ -1027,15 +1084,15 @@ h2 {
   }
 .close-modal{
   display: flex;
-
-  font-size: 2rem;
-  color: whitesmoke;
+  font-size: 30px;
+  color:white;
   margin-left: 85%;
   cursor: pointer;
   width:5rem; 
   background: none;
   border: none;
 }
+
 
 
 
@@ -1052,6 +1109,34 @@ h2 {
     cursor: pointer;
     display: block;  
   }
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+
+  }
+
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 2px;
+    background-color: white;
+  }
+  .close:before {
+    transform: rotate(45deg);
+    background-color: white;
+  }
+  .close:after {
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+  
 
   .sidebar {
     position: absolute;
@@ -1098,24 +1183,24 @@ h2 {
   
   }
   .icono-cart{
-    display:block;
+    display: flex;
+    justify-content: center;
+    background: none;
     border: none;
-    background:none;
-    color: white;
-    width: 6rem;
+    width: 5rem;
 
 
     
   }
   .carrito-1{
-    height: 4rem; 
+    height: 5rem; 
     border: none;
     background:none; 
   }
 
   .carrito{
   
-    height: 5rem;
+    height: 3.9rem;
 
     
   }
@@ -1174,14 +1259,28 @@ h2 {
   }
 
   .redes-sociales{
+    height: 40px;
+    margin-bottom: 0.8rem;
+    
+
+  }
+  .redes-s{
     height: 50px;
+    margin-bottom: 1rem;
+  }
+  .iniciar-sesion{
+    height: 50px;
+    margin-top: 1rem;
   }
   .lista-sidebar{
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    margin-left: 2rem;
     font-family: "Arial", sans-serif;
+
+  }
+  .menu{
+    margin-top: 1rem;
   }
 /*** MEJORA TU RENDIMIENTO Y APOYANOS MENU ***/
 .contenedor-rendimiento{
@@ -1358,9 +1457,16 @@ h2 {
   border-bottom: 0.1rem #c0c0c0 solid;
   display: flex;
   justify-content: center;
+
  
-  height:10vh;
- 
+}
+.cart-cart-header{
+  border-bottom: 0.1rem #c0c0c0 solid;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  color: white;
+
 }
 .cart-items {
   padding: 0;
@@ -1397,7 +1503,7 @@ h2 {
 }
 .redes-sociales-basura{
   max-width: 2rem;
-  max-height: 2rem;
+  max-height: 3rem;
 
 }
 .right {

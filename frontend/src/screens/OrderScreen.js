@@ -1,26 +1,25 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { createOrder, detailsOrder, payOrder } from '../actions/orderActions';
-import Paypal from '../Pagos/Paypal';
+import { detailsOrder, payOrder } from '../actions/orderActions';
 function OrderScreen(props) {
 
   const orderPay = useSelector(state => state.orderPay);
-  const { loading: loadingPay, success: successPay, error: errorPay } = orderPay;
+  //const { loading: loadingPay, success: successPay, error: errorPay } = orderPay;
   const dispatch = useDispatch();
-  useEffect(() => {
-    if (successPay) {
-      props.history.push("/profile");
-    } else {
-      dispatch(detailsOrder(props.match.params.id));
-    }
-    return () => {
-    };
-  }, [successPay]);
+  //useEffect(() => {
+   // if (successPay) {
+     // props.history.push("/profile");
+    //} else {
+    //  dispatch(detailsOrder(props.match.params.id));
+    //}
+    //return () => {
+    //};
+  //}, [successPay]);
 
-  const handleSuccessPayment = (paymentResult) => {
-    dispatch(payOrder(order, paymentResult));
-  }
+  //const handleSuccessPayment = (paymentResult) => {
+  //  dispatch(payOrder(order, paymentResult));
+  //}
 
   const orderDetails = useSelector(state => state.orderDetails);
   const { loading, order, error } = orderDetails;

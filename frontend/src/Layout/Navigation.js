@@ -1,8 +1,7 @@
 import React from 'react';
-import {  Link,useHistory } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
+import {  Link } from 'react-router-dom';
 import '../Shopping.css';
-import { connect, useSelector } from "react-redux";
+import { connect} from "react-redux";
 import Cart from '../components/Cart';
 import Boton from "../Layout/Boton";
 import { removeFromCart } from "../actions/CartActions";
@@ -71,7 +70,9 @@ return(
 <nav className="nav2">
 
 <div className="contenedor-nav">
-    <div className="logo-nav-1"><Boton/></div>
+    <div className="logo-nav-1">
+      <Boton/>
+      </div>
          
 <Link to="/signin"><ProfileScreen/></Link>
      
@@ -94,9 +95,9 @@ return(
  
           </div>
 
-          <Link to="/mi-espacio">
-          <MiEspacio/><p>MI ESPACIO</p>
-          </Link>
+         
+          <MiEspacio/>
+          
           <div  className="logo-nav-2">
             <Link to="/category/Shirts">
             <img src='/imagenes/iconos-84.png'className="redes-sociales-fac" alt="facebook" />
@@ -118,7 +119,7 @@ return(
 
 
       <div className="sidebar-CART">
-      <button className="sidebar-close-button" onClick={closeMenuCart}> x</button>
+      <button className="close"  onClick={closeMenuCart}/>
 
 
        <Cart/>
@@ -128,42 +129,47 @@ return(
 
 
       <div className="sidebar">
-        <button className="sidebar-close-button" onClick={closeMenu}>
-          x
-            </button>
-
+        
+      
+   
+            
+         
         <ul className="categories">
-
+        <li className="lista-sidebar">
+          <button className="close" onClick={closeMenu}/>
+          </li>
+          
           <li className="lista-sidebar">
+            
             <Link to="/signin">
-            <img src='/imagenes/iconos-81.png'className="redes-sociales" alt="login" />
+            <img src='/imagenes/iconos-81.png'className="iniciar-sesion" alt="login" />
             <ProfileScreen/> </Link>
             
           </li>
           <hr/>
           <li className="lista-sidebar">
             <Link to="/contacto">
-            <img src='/imagenes/iconos-82.png'className="redes-sociales" alt="contacto" /> 
-               CONTACTO</Link>
+            <img src='/imagenes/iconos-82.png'className="redes-s" alt="contacto" /> 
+              <p className="menu">CONTACTO</p> </Link>
           </li>
           <hr/>
           <li className="lista-sidebar">
             <Link to="/category/Shirts">
             <img src='/imagenes/iconos-84.png'className="redes-sociales" alt="facebook" />
-              FACEBOOK</Link>
+              <p className="menu">FACEBOOK</p></Link>
           </li>
           <hr/>
           <li className="lista-sidebar">
             <Link to="/category/Shirts">
-            <img src='/imagenes/iconos-83.png'className="redes-sociales" alt="instagram" /> 
-            INSTAGRAM</Link>
+            <img src='/imagenes/iconos-83.png'className="redes-s" alt="instagram" /> 
+            <p className="menu">INSTAGRAM</p></Link>
            
           </li>
           <hr/>
           <li className="lista-sidebar">
             <Link to="/category/Shirts">
             <img src='/imagenes/whatsapp-85.png'className="redes-sociales" alt="whatsapp" /> 
-            WHATSAPP</Link>
+           <p className="menu">WHATSAPP</p> </Link>
            
           </li>
          

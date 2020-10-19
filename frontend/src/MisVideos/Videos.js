@@ -4,7 +4,6 @@ import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import Modal from "react-modal";
 import '../Shopping.css';
-import LayoutUsu from "../Layout/LayoutUsu";
 import { connect } from "react-redux";
 
 import{ fetchVideos} from "../actions/videosActions";

@@ -21,7 +21,7 @@ function ProfileScreen(props) {
     <div>
       {userInfo ? (
         <Link to="/">
-          <button type="button" onClick={handleLogout} className="boton-atras">
+          <button type="button" onClick={handleLogout} className="sesion">
             <p>CERRAR SESIÓN</p>
           </button>
         </Link>

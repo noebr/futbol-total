@@ -21,7 +21,7 @@ function Payment(props) {
     <div className="login">
       <Link to="/">
         {" "}
-        <button className="close-modal">X</button>
+        <button className="close-modal">&times;</button>
       </Link>
       <hr />
       <div className="form">

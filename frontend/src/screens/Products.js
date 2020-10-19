@@ -304,7 +304,7 @@ class Products extends Component {
           >
             <Zoom>
               <button className="close-modal" onClick={this.closeModal}>
-                X
+              &times;
               </button>
               <hr />
               <div className="product-details">
@@ -324,7 +324,7 @@ class Products extends Component {
                     <hr />
                     <h1 className="centrar">RESUMEN</h1>
 
-                    <p className=" centrar price">${product.price}</p>
+                    <p className="centrar product-price-details">TOTAL: ${product.price}</p>
 
                     <hr />
                     <div>

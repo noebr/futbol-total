@@ -1,9 +1,8 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import Cookie from 'js-cookie';
 import { productsReducer} from "./reducers/productReducer";
 import {videosReducer} from "./reducers/videosReducer";
-import {userSigninReducer, userRegisterReducer, userUpdateReducer} from './reducers/userReducers';
+import {userSigninReducer, userRegisterReducer} from './reducers/userReducers';
 import { projectsReducer } from './reducers/projectReducer';
 import { cartReducer } from './reducers/cartReducer';
 import { articulosReducer } from './reducers/articuloReducer';

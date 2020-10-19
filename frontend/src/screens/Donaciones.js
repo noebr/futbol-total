@@ -106,7 +106,7 @@ class Donaciones extends Component {
                 >
                   <Zoom>
                     <button className="close-modal" onClick={this.closeModal}>
-                      x
+                    &times;
                     </button>
                     <hr />
                     <div>

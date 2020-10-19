@@ -31,7 +31,7 @@ function MiEspacio(props) {
               <Link to="/mi-espacio"><button type="button" className="boton-atras">
                   <img src='/imagenes/iconos-81.png'className="mi-espacio" alt="login" /></button></Link>
             ) : (
-              <Link to="/signin"><p></p></Link>
+              <Link to="/signin"></Link>
             )}
 
 

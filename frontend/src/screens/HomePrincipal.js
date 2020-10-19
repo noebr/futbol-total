@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "../Shopping.css";
 import { Link } from "react-router-dom";
-import Carousel from "react-elastic-carousel";
 import Slider from "react-slick";
 import Layout from "../Layout/Layout";
-import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/ProductActions";
@@ -75,9 +73,10 @@ class HomePrincipal extends Component {
           <br />
           <br />
 
+
           <header>
             <img
-              src="/imagenes/banner2.png"
+              src="/imagenes/banner.png"
               className="banner"
               alt="publicidad"
             />
@@ -124,7 +123,7 @@ class HomePrincipal extends Component {
           <h2 className="centrar">NUESTRO JUEGO</h2>
 
           <p className="centrar">
-            {" "}
+     
             Lorem Ipsum is simply dummy text of the printing
             <br /> and typesetting industry. Lorem Ipsum has
           </p>

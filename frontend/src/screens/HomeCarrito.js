@@ -43,7 +43,7 @@ function HomeCarrito(props) {
           </div>
         </div>
         <hr />
-        <div>
+        <div className="product-price">
           <h1 className="centrado">PASOS PARA QUE TU FÚTBOL SEA TOTAL</h1>
           <ol className="ol">
             <li>

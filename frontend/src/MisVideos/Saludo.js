@@ -28,7 +28,7 @@ function Saludo(props) {
                 <form >
                     
                 {userInfo ? (
-              <Link to="/mi-espacio"><button type="button" className="boton-atras"><h2>¡ Hola {userInfo.name} !</h2></button></Link>
+              <Link to="/mi-espacio"><h2>¡ Hola {userInfo.name} !</h2></Link>
             ) : (
               <Link to=""><p></p></Link>
             )}
