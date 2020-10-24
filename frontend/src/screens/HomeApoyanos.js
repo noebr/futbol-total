@@ -5,6 +5,7 @@ import Layout from "../Layout/Layout";
 
 class HomeApoyanos extends Component {
   render() {
+
     return (
       <Layout>
         <h1 className="centrar">¡APÓYANOS!</h1>
@@ -18,15 +19,14 @@ class HomeApoyanos extends Component {
 
           <br />
           <div className="texto-rendimiento centrado">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+            <p className="centrar nuestro-juego">
+              Es la persona que decide dar un aporte cada vez que puede; para
+              que un proyecto o plan de Fútbol Total, sea llevado adelante con
+              el objetivo de lograr la inclusión social por medio del fútbol.
             </p>
-
+            <br/><br/>
             <Link to="/donaciones">
-              <button className="button-red-forms">DONÁ</button>
+              <button className="button-red-forms">Doná</button>
             </Link>
           </div>
         </div>
@@ -43,15 +43,17 @@ class HomeApoyanos extends Component {
           <br />
 
           <div className="texto-rendimiento centrado">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+            <p className="centrar nuestro-juego">
+              Es la persona que siente importante contribuir a la inclusión
+              social de niños y niñas por medio del Fútbol, eligiendo el importe
+              mensual deseado; para que los proyectos sociales de Fútbol Total,
+              puedan ser sostenibles durante el tiempo y que la niñez pueda ser
+              una etapa feliz.
             </p>
+            <br/><br/>
 
             <Link to="/padrinazgo">
-              <button className="button-red-forms">APADRINA</button>
+              <button className="button-red-forms">Apadriná</button>
             </Link>
           </div>
         </div>
@@ -66,12 +68,20 @@ class HomeApoyanos extends Component {
           />
 
           <div className="texto-rendimiento centrado">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+            <p className="centrar nuestro-juego">
+              Es la persona que decide aportar su tiempo, conocimiento, trabajo
+              y compromiso; para que Fútbol Total, pueda estar al servicio de la
+              inclusión social por medio del fútbol.
             </p>
+            <br/><br/>
             <Link to="/voluntariado">
-              <button className="button-red-forms">VOLUNTARIO</button>
+              <button
+              
+                className="button-red-forms"
+                
+              >
+                Súmate
+              </button>
             </Link>
           </div>
         </div>
@@ -91,11 +101,10 @@ class HomeApoyanos extends Component {
               industry.
             </p>
             <Link to="/fiscalizacion">
-              <button className="button-red-forms">FISCALIZA</button>
+              <button className="button-red-forms">Fiscaliza</button>
             </Link>
           </div>
         </div>
-        
       </Layout>
     );
   }

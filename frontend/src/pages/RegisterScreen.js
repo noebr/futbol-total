@@ -33,7 +33,7 @@ function RegisterScreen(props) {
               </button></Link>
               <hr/>
     <br/>
-			<Link to="/"><img src='/imagenes/logof.png'className="App-logo" alt="logo" /></Link>
+			<Link to="/"><img src='/imagenes/logof.png'className="App-logo" alt="logo" /></Link><br/><br/>
     <form onSubmit={submitHandler} className='container-login-form'>
     <div className="datos-forms">
        
@@ -42,34 +42,29 @@ function RegisterScreen(props) {
           {error && <div>{error}</div>}
         
         
-          <label htmlFor="name" className="username">
-            Nombre de usuario
-          </label>
-          <input className='input' type="name" name="name" id="name" onChange={(e) => setName(e.target.value)}>
+
+          <input placeholder='Nombre de usuario' className='input' type="name" name="name" id="name" onChange={(e) => setName(e.target.value)}>
+          </input>
+        
+
+          <input placeholder='Correo electrónico' className='input' type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)}>
           </input>
         
         
-          <label htmlFor="email"className="username">
-            Correo electrónico
-          </label>
-          <input className='input' type="email" name="email" id="email" onChange={(e) => setEmail(e.target.value)}>
-          </input>
-        
-        
-          <label htmlFor="password" className="username">Contraseña</label>
-          <input className='input' type="password" id="password" name="password" onChange={(e) => setPassword(e.target.value)}>
+         
+          <input placeholder='Contraseña' className='input' type="password" id="password" name="password" onChange={(e) => setPassword(e.target.value)}>
           </input>
       
         
-          <label htmlFor="rePassword" className="username">Repetir contraseña</label>
-          <input className='input' type="password" id="rePassword" name="rePassword" onChange={(e) => setRePassword(e.target.value)}>
+         
+          <input placeholder='Repetir contraseña' className='input' type="password" id="rePassword" name="rePassword" onChange={(e) => setRePassword(e.target.value)}>
           </input>
        
        
           <button type="submit" className='button-red-forms'>Registrarme y continuar</button>
         
           <br/><br/><p>o</p><br/><br/>
-          <button className='button-azul-redes'><img src='/imagenes/facebook1.png'className="redes-sociales-facebook" alt="facebook" /> Regístrate con Facebook</button>
+          <button className='button-azul-redes'><img src='/imagenes/iconos-84.png'className="redes-sociales-gmail" alt="facebook" /> Regístrate con Facebook</button>
 					<br/><br/>
 					<button className='button-azul-redes'><img src='/imagenes/gmail.png'className="redes-sociales-gmail" alt="facebook" /> Regístrate con Gmail</button>
          

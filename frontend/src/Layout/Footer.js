@@ -6,8 +6,8 @@ class Footer extends Component {
   render(){
   return (
 <div className="site-footer">
-<div className="footer">Fundación Proinso.
-<br/>desarrollado y donado por QUATTRO S.A
+<div className="footer"><b>Fundación Proinso.</b>
+<br/>Desarrollado y donado por <b>QUATTRO S.A</b>
 </div>
 
 </div>

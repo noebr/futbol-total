@@ -13,24 +13,24 @@ class Voluntariadoform extends Component {
 		<form className='container-login-form'>
 		<div className="datos-forms">
         <h2>DATOS PERSONALES</h2>
-		<label className="username">Nombre y Apellido</label>
-		<input className='input'type='text'placeholder='nombre y apellido' />
-
-		<label className="username">Fecha de nacimiento</label>
-			<input className='input'type='text'placeholder='11/11/1111' />
+		<input className='input'type='text'placeholder='Proyecto' />
+		<input className='input'type='text'placeholder='Nombre y Apellido' />
+		
+		
+			<input className='input'type='text'placeholder='Fecha de nacimiento' />
             <h2>DATOS DE CONTACTO</h2>
-		<label className="username">Ciudad</label>
+		
 			<input className='input'type='text'placeholder='Ciudad' />
-            <label className="username">Domicilio</label>
+          
 			<input className='input'type='text'placeholder='Domicilio' />
-            <label className="username">E-mail</label>
+           
 			<input className='input'type='text'placeholder='E-mail' />
-            <label className="username">Teléfono </label>
+           
 			<input className='input'type='text'placeholder='Teléfono o celular' />
-			<label className="username">Teléfono de contacto </label>
-			<input className='input'type='text'placeholder='Teléfono o celular' />
+		
+		
 
-			<button className='button-red-forms'>SUMATE</button>
+			<button className='button-red-forms'>Súmate</button>
 			<br/>
 			<br/>
 

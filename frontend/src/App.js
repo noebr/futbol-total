@@ -36,6 +36,8 @@ import DonacionesyP from "./Fiscalizacion/DonacionesyP";
 import OrderScreen from './screens/OrderScreen';
 import HomeOrder from "./screens/HomeOrder";
 import DetallesdeA from "./Fiscalizacion/DetallesdeA";
+import Donacionesform from "./pages/Donacionesform";
+import Padrinazgoform from "./pages/Padrinazgoform";
 
 
 
@@ -79,11 +81,13 @@ render(){
         <Route path="/apoyanos" component= {HomeApoyanos}></Route>
         {/**home de donaciones */}
         <Route path="/donaciones" component= {Donaciones}></Route>
+        <Route path="/donaciones-form" component={Donacionesform}></Route>
         {/**home de padrinazgo */}
         <Route path="/padrinazgo" component= {Padrinazgo}></Route>
+        <Route path="/padrinazgo-form" exact={true} component= {Padrinazgoform}></Route>
         {/**home de voluntariado */}
         <Route path="/voluntariado" component= {Voluntariado}></Route>
-        <Route path="/form-voluntariado" component={Voluntariadoform}></Route>
+        <Route path="/voluntariado-form" component={Voluntariadoform}></Route>
         {/**contacto */}
         <Route path="/contacto" component= {Contacto}></Route>
         {/**home carrito */}
@@ -107,16 +111,26 @@ render(){
         <Route path="/homelogin" component={MenuRegistrate}></Route>
         { /**Mi espacio */}
         <Route path="/mi-espacio" component={HomeMiespacio}></Route>
+        { /**facturacion */}
         <Route path="/facturacion" component={HomeCompra} ></Route>
+        { /**pagos */}
         <Route path="/payment" component={Payment}></Route>
+        { /**ingresos-egresos */}
         <Route path="/ingresos-egresos" component={IngresosEgresos}></Route>
+        { /**entrega-beneficiarios */}
         <Route path="/entrega-beneficiarios" component={EntregaBeneficiarios}></Route>
+        { /**existencia-donaciones */}
         <Route path="/existencia-donaciones" component={ExistenciaD}></Route>
+        { /**Donaciones-padrinazgo */}
         <Route path="/Donaciones-padrinazgo" component={DonacionesyP}></Route>
+        { /**detalles-aporte */}
         <Route path="/detalles-aporte" component={DetallesdeA}></Route>
-     
+        { /**orden por id */}
         <Route Path="/order/:id" component={OrderScreen}></Route>
+        { /*datalle de orden */}
         <Route Path="/placeorder" component={HomeOrder}></Route>
+        
+
        
      
        

@@ -15,17 +15,17 @@ class Alertacont extends Component {
                 <div className="datos-forms">
                     <br />
 
-                    <label className="username">Nombre y Apellido</label>
+                   
                     <input className='input' type='text' placeholder='Nombre y Apellido' />
-                    <label className="username">E-mail</label>
+         
                     <input className='input' type='text' placeholder='ejemplo@ejemplo.com' />
-                    <label className="username">Teléfono/celular</label>
+                    
                     <input className='input' type='text' placeholder='Teléfono o celular' />
-        <label className="username">Dirido a</label>
+       
        
 
-                    <label className="username">Motivo</label>
-                    <textarea className='comentarios' rows='8' cols='50'></textarea>
+                    
+                    <textarea className='comentarios'placeholder='Motivo' rows='8' cols='35'></textarea>
 
                     <button className='button-red-forms'>Enviar </button>
                     <br/>
@@ -33,9 +33,9 @@ class Alertacont extends Component {
                     <h3 ><br/>También podes contactarnos por:<br/></h3>
 
                    <div className='contenedor-redes-sociales'>
-                    <img src='/imagenes/instagram1.png'className="redes-sociales" alt="instagram" />
-                    <img src='/imagenes/whatsapp1.png'className="redes-sociales" alt="whatsapp" />
-                    <img src='/imagenes/facebook1.png'className="redes-sociales" alt="facebook" />
+                    <img src='/imagenes/iconos-83.png'className="redes-sociales" alt="instagram" />
+                    <img src='/imagenes/whatsapp-85.png'className="redes-sociales" alt="whatsapp" />
+                    <img src='/imagenes/iconos-84.png'className="redes-sociales" alt="facebook" />
                     </div>
                     <br/>
                     <br/>

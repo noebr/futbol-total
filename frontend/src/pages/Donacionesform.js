@@ -9,27 +9,27 @@ class Donacionesform extends Component {
     return (
 		<Layout>
         <section className='login'>
-        <h1 className="centrar">COMPLETÁ TUS DATOS</h1>
+        <h1 className="centrar">FORMULARIO DE DONACIÓN</h1>
 		<form className='container-login-form'>
 		<div className="datos-forms">
         <h2>DATOS PERSONALES</h2>
-		<label className="username">Nombre y Apellido</label>
-		<input className='input'type='text'placeholder='nombre y apellido' />
 
-		<label className="username">R.U.C</label>
-			<input className='input'type='text'placeholder='R.U.C' />
+		<input className='input'type='text'placeholder='Nombre y Apellido' />
+
+
+			<input className='input'type='text'placeholder='C.I o R.U.C' />
   
-            <label className="username">E-mail</label>
+            
 			<input className='input'type='text'placeholder='E-mail' />
-            <label className="username">Teléfono o celular</label>
+
 			<input className='input'type='text'placeholder='Teléfono o celular' />
  
 <div className='idiomas'><label className="username"></label>
-<label>  <p className="checkbox"> <input type='checkbox'id='cbox1'value='first_checkbox' /> QUIERO DONAR/APADRINAR DE FORMA ANÓNIMA</p></label>	
+<label>  <p className="checkbox"> <input type='checkbox'id='donador'value='donador' /> Quiero donar de forma anónima</p></label>	
 
 </div>
 
-			<button className='button-red-forms'>SIGUIENTE</button>
+			<button className='button-red-forms'>Siguiente</button>
 			<br/>
 			<br/>
 

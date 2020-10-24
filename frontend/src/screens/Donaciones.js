@@ -31,7 +31,9 @@ class Donaciones extends Component {
 
   render() {
     const { project } = this.state;
-
+    const checkoutHandler = () => {
+      this.props.history.push("/donaciones-form");
+    };
     return (
       <Layout>
         <h1 className="centrar">DONACIONES</h1>
@@ -61,11 +63,11 @@ class Donaciones extends Component {
                       <div className="datos-t">
                         <div className="datos_tiempo">
                           <p className="datos-m">
-                            CANTIDAD DE DONANTES: {project.c_donantes}
+                            Cantidad de donantes: {project.c_donantes}
                           </p>
-                          <p className="datos-m">META: GS{project.meta}</p>
+                          <p className="datos-m">Meta: Gs{project.meta}</p>
                           <p className="datos-m">
-                            MONTO RECAUDADO: GS{project.monto_recaudado}
+                            Monto recaudado: Gs{project.monto_recaudado}
                           </p>
                         </div>
                         <div>
@@ -81,16 +83,16 @@ class Donaciones extends Component {
                       </div>
                       <br />
 
-                      <button className="button-red-forms">DONÁ</button>
+                      <button onClick={checkoutHandler} className="button-red-forms">Doná</button>
                       <br />
                       <br />
                       <Link
-                        className="link-name"
+                       
                         to={"#" + project._id}
                         onClick={() => this.openModal(project)}
                       >
                         <button className="button-transparente-forms">
-                          CONOCER MÁS
+                          Conocer más
                         </button>
                       </Link>
                     </div>
@@ -125,15 +127,15 @@ class Donaciones extends Component {
 
                         <hr />
                         <div className="product-price centrar">
-                          <button className="button-red-forms">DONÁ</button>
-                          <br />
+                          <button  onClick={checkoutHandler} className="button-red-forms">Doná</button>
+                          <br /><br />
                           <button
                             className="button-transparente-forms"
                             onClick={() => {
                               this.closeModal();
                             }}
                           >
-                            VOLVER
+                            Volver
                           </button>
                         </div>
                       </div>

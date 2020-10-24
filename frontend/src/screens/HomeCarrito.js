@@ -69,13 +69,13 @@ function HomeCarrito(props) {
           className="button-red-forms"
           disabled={cartItems.length === 0}
         >
-          COMPRAR AHORA
+          Comprar ahora
         </button>
         <br />
         <Link to="/shopping">
           {" "}
           <button className="button-transparente-forms">
-            SEGUIR EN EL SHOPPING
+            Seguir en el shopping
           </button>
         </Link>
       </div>

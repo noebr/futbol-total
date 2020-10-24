@@ -6,9 +6,9 @@ class Footer2 extends Component {
   render(){
   return (
 <div className="site-footer">
-<div className="footer">Fundación Proinso.
-<br/>desarrollado y donado por QUATTRO S.A
-<br/>Apoya TIPCSA
+<div className="footer-1"><b>Fundación Proinso.</b>
+<br/>Desarrollado y donado por <b>QUATTRO S.A</b>
+<br/>Apoya <b>TIPCSA</b>
 </div>
 
             <img src="/imagenes/sello.png" className="sello" alt="apóyanos" />

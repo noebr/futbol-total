@@ -59,8 +59,8 @@ function Payment(props) {
                 >
                   <img
                    htmlFor="tigoMethod"
-                    src="/imagenes/tigo-money.jpg"
-                    className="pagos-paypal"
+                    src="/imagenes/FT3-23.png"
+                    className="pagos-money"
                     alt="tigo money"
                   />
                 </button>
@@ -77,11 +77,28 @@ function Payment(props) {
                 >
                   <img
                     htmlFor="personalMethod"
-                    src="/imagenes/billetera-personal.jpg"
-                    className="pagos-paypal"
+                    src="/imagenes/FT3-24.png"
+                    className="pagos-personal"
                     alt="billetera personal"
                   />
                 </button>
+                <hr />
+                <div>
+                <button
+                  className="m-pagos"
+                  name="paymentMethod"
+                  id="paymentMethod"
+                  value="paypal"
+                  onChange={(e) => setPaymentMethod(e.target.value)}
+                >
+                  <img
+                   htmlFor="tigoMethod"
+                    src="/imagenes/FT3-25.png"
+                    className="pagos-transf"
+                    alt="tigo money"
+                  />
+                </button>
+                </div>
               </div>
             </div>
           </div>

@@ -147,7 +147,7 @@ class Promociones extends Component {
                     <strong>
                       {product.name}
                       <br />
-                      DESCRIPCION:{" "}
+                      Descripción:{" "}
                     </strong>
                   </h2>
                   <div className="datos-forms">
@@ -157,14 +157,14 @@ class Promociones extends Component {
                     <hr />
                     <h1 className="centrar">RESUMEN</h1>
 
-                    <p className="centrar product-price-details">TOTAL: ${product.price}</p>
+                    <p className="centrar product-price-details">Total: ${product.price}</p>
 
                     <hr />
                     <div>
                       <h1 className="centrado">
                         PASOS PARA QUE TU FÚTBOL SEA TOTAL
                       </h1>
-                      <ol className="ol">
+                      <ol >
                         <li>
                           <p>
                             Presiona el botón comprar o seguí agregardo al
@@ -178,14 +178,10 @@ class Promociones extends Component {
                           </p>
                         </li>
                         <li>
-                          <p>
-                            Elije el método de pago de tu preferencia
-                            </p>
+                          <p>Elije el método de pago de tu preferencia</p>
                         </li>
                         <li>
-                          <p>
-                            Disfruta del Fútbol Total
-                            </p>
+                          <p>Disfruta del Fútbol Total</p>
                         </li>
                       </ol>
                       <br />

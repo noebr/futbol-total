@@ -20,15 +20,20 @@ function ProfileScreen(props) {
   return (
     <div>
       {userInfo ? (
+        <div className="lista-sidebar">
         <Link to="/">
           <button type="button" onClick={handleLogout} className="sesion">
-            <p>CERRAR SESIÓN</p>
+            <p>Cerrar sesión</p><br/>
           </button>
         </Link>
+        </div>
       ) : (
+        <div className="lista-sidebar">
         <Link to="/signin">
-          <p>INICIAR SESIÓN</p>
+          <p>Iniciar sesión</p>
         </Link>
+        
+        </div>
       )}
     </div>
   );

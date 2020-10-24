@@ -42,10 +42,9 @@ function HomeCompra(props) {
             <div className="datos-forms">
               <h1 className="centrar">DATOS DE FACTURACIÓN</h1>
 
-              <label htmlFor="Nombre" className="username">
-                Nombre
-              </label>
+
               <input
+              placeholder=' Nombre o razón social'
                 className="input"
                 type="text"
                 name="Nombre"
@@ -53,21 +52,9 @@ function HomeCompra(props) {
                 onChange={(e) => setNombre(e.target.value)}
               ></input>
 
-              <label htmlFor="Apellido" className="username">
-                Apellido
-              </label>
-              <input
-                className="input"
-                type="text"
-                name="Apellido"
-                id="Apellido"
-                onChange={(e) => setApellido(e.target.value)}
-              ></input>
 
-              <label htmlFor="RUC" className="username">
-                RUC O CI
-              </label>
               <input
+              placeholder=' RUC O CI'
                 className="input"
                 type="text"
                 name="RUC"
@@ -75,10 +62,9 @@ function HomeCompra(props) {
                 onChange={(e) => setRuc(e.target.value)}
               ></input>
 
-              <label htmlFor="E-MAIL" className="username">
-                E-MAIL
-              </label>
+
               <input
+              placeholder=' E-mail'
                 className="input"
                 type="text"
                 name="E-MAIL"

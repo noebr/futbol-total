@@ -31,7 +31,9 @@ class Padrinazgo extends Component {
 
   render() {
     const { project } = this.state;
-
+    const checkoutHandler = () => {
+      this.props.history.push("/padrinazgo-form");
+    };
     return (
       <Layout>
         <h1 className="centrar">PADRINAZGO</h1>
@@ -61,11 +63,11 @@ class Padrinazgo extends Component {
                       <div className="datos-t">
                         <div className="datos_tiempo">
                           <p className="datos-m">
-                            CANTIDAD DE DONANTES: {project.c_donantes}
+                            Cantidad de padrinos: {project.c_donantes}
                           </p>
-                          <p className="datos-m">META: GS{project.meta}</p>
+                          <p className="datos-m">Meta: Gs{project.meta}</p>
                           <p className="datos-m">
-                            MONTO RECAUDADO: GS{project.monto_recaudado}
+                            Monto recaudado: Gs{project.monto_recaudado}
                           </p>
                         </div>
                         <div>
@@ -79,15 +81,15 @@ class Padrinazgo extends Component {
                         ${project.description}
                       </div>
                       <br />
-                      <button className="button-red-forms">APADRINÁ</button>
+                      <button onClick={checkoutHandler} className="button-red-forms">Apadriná</button>
                       <br /> <br />
                       <Link
-                        className="link-name"
+                        
                         to={"#" + project._id}
                         onClick={() => this.openModal(project)}
                       >
                         <button className="button-transparente-forms">
-                          CONOCER MÁS
+                          Conocer más
                         </button>
                       </Link>
                     </div>
@@ -122,15 +124,15 @@ class Padrinazgo extends Component {
 
                         <hr />
                         <div className="product-price centrar">
-                          <button className="button-red-forms">APADRINÁ</button>
-                          <br />
+                          <button onClick={checkoutHandler} className="button-red-forms">Apadriná</button>
+                          <br /><br />
                           <button
                             className="button-transparente-forms"
                             onClick={() => {
                               this.closeModal();
                             }}
                           >
-                            VOLVER
+                            Volver
                           </button>
                         </div>
                       </div>

@@ -20,20 +20,20 @@ class Fiscalizacionhome extends Component {
       <Fade bottom cascade ={ true }>
         <div className="container-fiscalizacion">  
         
-        <Link clasName="boton-fiscalizacion"to ="/ingresos-egresos"><img src='/imagenes/FT.T-56.png' className="boton-fiscalizacion" alt="INGRESOS Y EGRESO" />
-        </Link><p>INGRESOS Y EGRESOS</p>
+        <Link clasName="boton-fiscalizacion"to ="/ingresos-egresos"><img src='/imagenes/ingresos.png' className="boton-fiscalizacion" alt="INGRESOS Y EGRESO" />
+        </Link>
 
-        <Link clasName="boton-fiscalizacion"to ="/detalles-aporte"><img src='/imagenes/FT.T-55.png' className="boton-fiscalizacion" alt="DETALLES DE TU APORTE" />
-        </Link><p>DETALLES DE TU APORTE</p>
+        <Link clasName="boton-fiscalizacion"to ="/detalles-aporte"><img src='/imagenes/detalles.png' className="boton-fiscalizacion" alt="DETALLES DE TU APORTE" />
+        </Link>
 
-        <Link clasName="boton-fiscalizacion"to ="/Donaciones-padrinazgo"><img src='/imagenes/FT.T-54.png' className="boton-fiscalizacion" alt="DONACIONES Y PADRINAZGO" />
-        </Link><p>DONACIONES Y PADRINAZGO</p>
+        <Link clasName="boton-fiscalizacion"to ="/Donaciones-padrinazgo"><img src='/imagenes/donaciones.png' className="boton-fiscalizacion" alt="DONACIONES Y PADRINAZGO" />
+        </Link>
 
-        <Link clasName="boton-fiscalizacion"to ="/existencia-donaciones"><img src='/imagenes/FT.T-53.png' className="boton-fiscalizacion" alt="EXISTENCIA DE DONACIONES" />
-        </Link><p>EXISTENCIA DE DONACIONES</p>
+        <Link clasName="boton-fiscalizacion"to ="/existencia-donaciones"><img src='/imagenes/Existencia.png' className="boton-fiscalizacion" alt="EXISTENCIA DE DONACIONES" />
+        </Link>
         
-        <Link clasName="boton-fiscalizacion"to ="/entrega-beneficiarios"><img src='/imagenes/FT27.png' className="boton-fiscalizacion-2" alt="ENTREGAS A BENEFICIARIOS" />
-        </Link><p>ENTREGAS A BENEFICIARIOS</p>
+        <Link clasName="boton-fiscalizacion"to ="/entrega-beneficiarios"><img src='/imagenes/entregas.png' className="boton-fiscalizacion" alt="ENTREGAS A BENEFICIARIOS" />
+        </Link>
 
         </div> 
       </Fade>

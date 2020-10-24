@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import Modal from "react-modal";
@@ -10,6 +10,7 @@ import{ fetchVideos} from "../actions/videosActions";
 
 import Slider from "react-slick";
 import ReactPlayer from 'react-player';
+import Layout from "../Layout/Layout";
 
 
 
@@ -48,7 +49,7 @@ class Videos extends Component {
     };
     
     return (
-      
+      <Layout>
       <div>
  <h1>MIS VIDEOS</h1>
  
@@ -197,7 +198,7 @@ class Videos extends Component {
                      {this.props.videos.map((video) => (
                         
                          <div key={video._id}>
-                         <div className="videos-lista">
+                         <div>
                         
                          <Link className="videos-lista" to={"#" + video._id} onClick={() => this.openModal(video)}>
                          <div className="video">
@@ -226,15 +227,20 @@ class Videos extends Component {
    <Modal className="reproductor" isOpen={true} onRequestClose={this.closeModal}>
      <Zoom>
        <button className="close-modal" onClick={this.closeModal}>
-         X
+       &times;
        </button>
        <hr/>
 
        <ReactPlayer className="player" url={video.video} controls width='100%'
           height='100%'/>
+           <p>{video.nombre}</p>
+          <div className="reproducir-descripcion">
+
+         
                                        
-                                     
-      
+                                    
+                                     <p>Descripción:{video.description}</p>                           
+                                     </div>
      </Zoom>
    </Modal>
  )}
@@ -242,7 +248,7 @@ class Videos extends Component {
 </Slider>
 
       </div>
-   
+   </Layout>
 
     )
   }

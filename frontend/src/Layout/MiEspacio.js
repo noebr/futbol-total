@@ -28,8 +28,15 @@ function MiEspacio(props) {
                 <form >
                     
                 {userInfo ? (
-              <Link to="/mi-espacio"><button type="button" className="boton-atras">
-                  <img src='/imagenes/iconos-81.png'className="mi-espacio" alt="login" /></button></Link>
+              <Link to="/mi-espacio">
+                  <nav className="nav3">
+                      <button type="button" className="mi-espacio">
+                     
+                  <img src='/imagenes/futbol.png'className="icon-espacio" alt="login" />
+                   <p className="saludo">  ¡Hola,{userInfo.name}! </p></button>
+                  </nav>
+                  </Link>
+                  
             ) : (
               <Link to="/signin"></Link>
             )}

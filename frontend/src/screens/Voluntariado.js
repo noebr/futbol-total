@@ -30,6 +30,9 @@ class Voluntariado extends Component {
 
   render() {
     const { project } = this.state;
+    const checkoutHandler = () => {
+      this.props.history.push("/voluntariado-form");
+    };
 
     return (
       <Layout>
@@ -60,17 +63,17 @@ class Voluntariado extends Component {
                         ${project.description}
                       </div>
                       <br />
-                      <button className="button-red-forms">
-                        QUIERO FORMAR PARTE
+                      <button   onClick={checkoutHandler} className="button-red-forms">
+                        Quiero formar parte
                       </button>
                       <br /> <br />
                       <Link
-                        className="link-name"
+                        
                         to={"#" + project._id}
                         onClick={() => this.openModal(project)}
                       >
                         <button className="button-transparente-forms">
-                          CONOCER MÁS
+                          Conocer más
                         </button>
                       </Link>
                     </div>
@@ -105,10 +108,10 @@ class Voluntariado extends Component {
 
                         <hr />
                         <div>
-                          <button className="button-red-forms">
-                            QUIERO FORMAR PARTE
+                          <button   onClick={checkoutHandler} className="button-red-forms">
+                            Quiero formar parte
                           </button>
-                          <br />
+                          
                           <br />
                           <br />
                           <button
@@ -117,7 +120,7 @@ class Voluntariado extends Component {
                               this.closeModal();
                             }}
                           >
-                            VOLVER
+                            Volver
                           </button>
                         </div>
                       </div>

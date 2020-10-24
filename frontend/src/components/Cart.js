@@ -38,10 +38,11 @@ class Cart extends Component {
     return (
       <div>
         {cartItems.length === 0 ? (
-          <div className="cart-cart-header">El carrito esta vacío</div>
+          <div className="cart-cart-header"><p>El carrito esta vacío</p></div>
         ) : (
           <div className="cart-cart-header">
-            Tienes {cartItems.length} productos en el carrito{" "}
+           <p> Tienes {cartItems.length} productos en el carrito{" "}</p>
+            <br/><br/><br/>
           </div>
         )}
 
@@ -104,7 +105,7 @@ class Cart extends Component {
                     <div className="cart-price">
                     <p>{formatCurrency(item.price)} </p>
                     </div>
-                      <div className="cart-price">
+                      <div className="cart-price-tachito">
                      
                         <button
                           className="cart-button"

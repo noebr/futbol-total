@@ -9,6 +9,7 @@ import { fetchProducts } from "../actions/ProductActions";
 import { addToCart } from "../actions/CartActions";
 import Modal from "react-modal";
 import Promociones from "../components/Promociones";
+import MiEspacio from "../Layout/MiEspacio";
 
 class HomePrincipal extends Component {
   constructor(props) {
@@ -33,8 +34,8 @@ class HomePrincipal extends Component {
       slidesToShow: 3,
       slidesToScroll: 3,
       autoplay: true,
-      speed: 2500,
-      autoplaySpeed: 2500,
+      speed: 2000,
+      autoplaySpeed: 2000,
       cssEase: "linear",
       arrows: false,
       responsive: [
@@ -67,12 +68,12 @@ class HomePrincipal extends Component {
     return (
       <div className="fondo-cancha">
         <Layout>
+          <MiEspacio />
           <br />
           <br />
           <h1 className="centrado titulo ">MEJORÁ TU JUEGO </h1>
           <br />
           <br />
-
 
           <header>
             <img
@@ -89,30 +90,36 @@ class HomePrincipal extends Component {
 
           <br />
           <br />
+          <br />
+          <br />
+
           <Link to="/shopping">
-            <button className="button-red-promociones"> VER TODO </button>
+            <button className="button-red-promociones"> Ver todo </button>
           </Link>
+          <br />
+          <br />
           <br />
 
           <hr />
           <div className="container-menu-redondos">
             <Link to="/apoyanos" className="iconos-redondos">
               <img
-                src="/imagenes/apoyanos-1.png"
+                src="/imagenes/mejora.png"
+               
                 className="iconos-redondos"
                 alt="apóyanos"
               />
             </Link>
             <Link to="/shopping" className="iconos-redondos">
               <img
-                src="/imagenes/shopping-1.png"
-                className="boton-fiscalizacion-2"
+                src="/imagenes/shopping-1-1.png"
+                className="iconos-redondos-1"
                 alt="shopping"
               />
             </Link>
             <Link to="/mejora-tu-juego" className="iconos-redondos">
               <img
-                src="/imagenes/rendimiento-1.png"
+                 src="/imagenes/apoyanos.png"
                 className="iconos-redondos"
                 alt="contenido técnico de fútbol"
               />
@@ -122,50 +129,84 @@ class HomePrincipal extends Component {
 
           <h2 className="centrar">NUESTRO JUEGO</h2>
 
-          <p className="centrar">
-     
-            Lorem Ipsum is simply dummy text of the printing
-            <br /> and typesetting industry. Lorem Ipsum has
+          <p className="centrar nuestro-juego">
+           
+            Creemos en el fútbol como una herramienta de desarrollo individual,
+            social y económico. A través de nuestra secuencia con videos de
+            contenido pedagógico para el dominio del balón; podrás aprender a
+            divertirte con la pelota, mediante el desarrollo de tus habilidades
+            que apunten a tener un buen 1 vs. 1 y así ganar en confianza al
+            momento de jugar el fútbol con tus amigos.
           </p>
+          <br/><br/><br/>
           <Slider {...settings}>
             <img
-              src="/imagenes/fotos-3.png"
+              src="/imagenes/nuestros-juego1.jpg"
               className="img-testimonial"
-              alt="publicidad"
+              alt="Charla en la Escuela Nacional de Educación Física
+              (Gobernación de Cordillera) sobre Nutrigenética y nutrigenómica en el fútbol"
             />
             <img
-              src="/imagenes/fotos-3.png"
+              src="/imagenes/nuestros-juego2.jpg"
               className="img-testimonial"
-              alt="publicidad"
+              alt="Colonia de Vacaciones de Fútbol Total en alianza con la Secretaria
+               Nacional de Deportes-Charlas"
             />
             <img
-              src="/imagenes/fotos-3.png"
+              src="/imagenes/nuestros-juego3.jpg"
               className="img-testimonial"
-              alt="publicidad"
+              alt="Colonia de Vacaciones de Fútbol Total en alianza con la Secretaria Nacional de Deportes"
             />
             <img
-              src="/imagenes/fotos-4.png"
+              src="/imagenes/nuestros-juego4.jpg"
               className="img-testimonial"
-              alt="publicidad"
+              alt="Colonia de Vacaciones de Fútbol Total en alianza
+               con la Secretaria Nacional de Deportes-Entrenamientos"
+            />
+            <img
+              src="/imagenes/nuestros-juego5.PNG"
+              className="img-testimonial"
+              alt="Preparativos para la plataforma de Futbol Total"
+            />
+            <img
+              src="/imagenes/nuestros-juego6.jpg"
+              className="img-testimonial"
+              alt="Proyecto Estación de Innovación - Barrio Chaipé Encarnación - Eje Deporte Inclusivo"
+            />
+            <img
+              src="/imagenes/nuestros-juego7.PNG"
+              className="img-testimonial"
+              alt="Proyecto Fútbol Total-Visita de la selección 
+              Suiza de Beach Soccer al Bañado Sur,Asunción Paraguay. Juego"
+            />
+
+            <img
+              src="/imagenes/nuestros-juego8.PNG"
+              className="img-testimonial"
+              alt="Proyecto Fútbol Total-Visita de la selección Suiza de Beach Soccer 
+              al Bañado Sur,Asunción Paraguay"
+            />
+            <img
+              src="/imagenes/nuestros-juego9.jpg"
+              className="img-testimonial"
+              alt="Reunión con la Liga Encarnacena de Futbol intercambiando experiencias."
             />
           </Slider>
           <div className="testimonial ">
-            <blockquote>
-              <p className="centrar">
+            <h2>TESTIMONIO</h2>
+           
+              <p className="texto-t">
                 <img
-                  src="/imagenes/comillas.png"
-                  alt="comillas"
+                  src="/imagenes/comillas1.png"
+                  alt=""
                   className="icon-logo-c"
                 />
                 Rápido significa lento pero sin pausa
-                <img
-                  src="/imagenes/cita.png"
-                  alt="comillas"
-                  className="icon-logo-c"
-                />{" "}
-                <br /> Fernando Jubero
+{" "}
               </p>
-            </blockquote>
+
+              <p className="testimonio-f">-FERNANDO JUBERO </p>
+           
           </div>
 
           {product && (
@@ -186,7 +227,7 @@ class HomePrincipal extends Component {
                       <strong>
                         {product.name}
                         <br />
-                        DESCRIPCION:{" "}
+                        Descripción:{" "}
                       </strong>
                     </h2>
 
@@ -241,8 +282,6 @@ class HomePrincipal extends Component {
               </Zoom>
             </Modal>
           )}
-
-
         </Layout>
       </div>
     );

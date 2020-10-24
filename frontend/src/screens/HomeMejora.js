@@ -12,7 +12,7 @@ class HomeMejora extends Component {
           <div className="imagen-rectangular">
             <h2 className="centrar">17 REGLAS DEL FÚTBOL</h2>
             <img
-              src="/imagenes/fotos-4.png"
+              src="/imagenes/nuestros-juego2.jpg"
               className="imagen-logo"
               alt="REGLAS-FUTBOL-FIFA"
             />
@@ -32,7 +32,7 @@ class HomeMejora extends Component {
           <div className="imagen-rectangular">
             <h2 className="centrar">ALIMENTACIÓN CONSCIENTE</h2>
             <img
-              src="/imagenes/fotos-4.png"
+              src="/imagenes/nuestros-juego2.jpg"
               className="imagen-logo"
               alt="imagen-SANA"
             />
@@ -57,7 +57,7 @@ class HomeMejora extends Component {
           <div className="imagen-rectangular">
             <h2 className="centrar">NUESTRO SHOPPING</h2>
             <img
-              src="/imagenes/fotos-4.png"
+              src="/imagenes/nuestros-juego2.jpg"
               className="imagen-logo"
               alt="shopping"
             />
